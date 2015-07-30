@@ -1,0 +1,31 @@
+<template name="configureLoginServiceDialogForSmartsheet">
+  <p>
+    First, you'll need to get a Smartsheet Client ID. Follow these steps:
+  </p>
+  <ol>
+    <li>
+      Log into your Smartsheet developer account at <a href="https://app.smartsheet.com/b/home" target="blank">https://app.smartsheet.com/b/home</a>.
+    </li>
+    <li>
+      Select "Account" menu on top left.
+    </li>
+    <li>
+      Choose "Developer Tools".
+    </li>
+    <li>
+      Register a new app by clicking on "Create New App" button.
+    </li>
+    <li> 
+      Fill in "App name" (ex: "My Meteor App"), "App description" (ex: "Best Smartsheet Meter App Ever"), "App contact/support" (ex: "contact@mydomain.com").
+    </li>
+    <li>
+      Set "App redirect URL" to: <span class="url">{{siteUrl}}_oauth/smartsheet</span>.
+    </li>
+    <li>
+      Copy "App client ID" and "App client secret" and paste into the fields below.
+    </li>
+    <li>
+      Finish by clicking "Save".
+    </li>
+  </ol>
+</template>
